@@ -1,0 +1,325 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        #portfolio {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header Section */
+        #name {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #name div {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        #sub-heading {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+
+        #sub-heading div {
+            font-size: 0.95rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #sub-heading a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        #sub-heading a:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        #email-address {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #email-address::before {
+            content: "✉";
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 35px 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* About Section */
+        #about-myself {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Work Experience */
+        #work-experience {
+            margin-bottom: 30px;
+        }
+
+        .work-experience-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .work-experience-content li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .work-experience-content li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #666;
+        }
+
+        /* Projects */
+        #projects {
+            margin-bottom: 30px;
+        }
+
+        #project1 {
+            margin-bottom: 25px;
+        }
+
+        #project-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .name-of-project {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .github-repository-link a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .github-repository-link a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        #project1 ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #project1 li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        #project1 li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #666;
+        }
+
+        /* Education */
+        #education {
+            margin-bottom: 30px;
+        }
+
+        #education-details {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #education-details div:first-child {
+            font-weight: 600;
+        }
+
+        #education-details div:nth-child(2) {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        #education-details div:last-child {
+            text-align: right;
+            color: #666;
+        }
+
+        /* Skills */
+        #skills {
+            margin-bottom: 30px;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            margin-bottom: 12px;
+            padding: 12px 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #ddd;
+        }
+
+        #skills li strong {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        /* Additional Info */
+        #additional-info {
+            margin-bottom: 20px;
+        }
+
+        #certification ol {
+            padding-left: 25px;
+        }
+
+        #certification li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        #certification a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        #certification a:hover {
+            border-bottom: 1px solid #333;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            #portfolio {
+                padding: 25px;
+            }
+
+            #name div {
+                font-size: 2rem;
+            }
+
+            #sub-heading {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            #project-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            #education-details {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                text-align: left;
+            }
+
+            #education-details div:nth-child(2),
+            #education-details div:last-child {
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #portfolio {
+                padding: 20px;
+            }
+
+            #name div {
+                font-size: 1.8rem;
+            }
+
+            .github-repository-link a {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+        }
